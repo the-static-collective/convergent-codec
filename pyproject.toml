@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convergent-codec"
+version = "0.1.2"
+description = "Exact prototype for convergent model compression. RAW and PERIODIC_SPARSE frames deterministically reconstruct signed 32-bit sequences and select by emitted frame size."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["convergent_codec*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
