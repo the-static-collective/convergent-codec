@@ -1,0 +1,8 @@
+Crossroads 002 — source excerpts retrieved through authenticated GitHub connector.
+Files are manually transcribed excerpts, checked against connector-returned nonblank right-trimmed text using FNV-1a over Unicode code points. FNV is an accidental transcription check, not a cryptographic proof. The original source files' Git blob IDs and commits are below. No donor code was executed.
+
+codec.py: the-static-collective/convergent-codec, commit 38ede773ace9a38e27c61e159c36cda17090ca16, convergent_codec/canonical.py lines 12–63, blob bdde848332511fd5b25e3f06844d8dd454f849e6.
+ledger.py: the-static-collective/unfolding-ledger, commit 6a531ade399c2280ba3901351d3d675a6aeb24ee, unfolding_ledger/invariants.py lines 25–64, blob 52e5588e06916db7c5a19552d19eb0a30905d35a.
+motif.py: the-static-collective/MOTIF, commit db4c17cfac407e3cefa20fc9fee101449b05bcc4, api/mcp.py lines 97–168, blob e51a967a4bf47a63e7204c1c076bc1b674c7b53d.
+
+Run with Python 3.10 or newer: python resonance_probe.py; python resonance_controls.py. AST schemas and standard library controls depend on Python version. Current results were generated on the local Python version shown in results.txt. The decoder is an experimental trusted-input verifier, not a hardened external-input parser. AST representation omits comments, formatting and source positions. JSON scalar encoding is limited to the scalar types used in these fixtures, not arbitrary Python source. No semantics or behavior equivalence is claimed.

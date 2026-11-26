@@ -1,0 +1,1308 @@
+[
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(sign) + (sum(id) - sum(sign)))",
+        "hex": "f006f10306"
+      },
+      {
+        "expression": "((sum(id) + sum(square)) - sum(square))",
+        "hex": "f1f0030505"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "sum(id)",
+    "representative_hex": "03"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) + sum(square)) - sum(id))",
+        "hex": "f1f0030503"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ]
+    ],
+    "representative": "sum(square)",
+    "representative_hex": "05"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(id) - (sum(id) - sum(sign)))",
+        "hex": "f103f10306"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(sign)"
+        ],
+        1
+      ]
+    ],
+    "representative": "sum(sign)",
+    "representative_hex": "06"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(first - first)",
+        "hex": "f10101"
+      },
+      {
+        "expression": "(last - last)",
+        "hex": "f10202"
+      },
+      {
+        "expression": "(sum(id) - sum(id))",
+        "hex": "f10303"
+      },
+      {
+        "expression": "(sum(square) - sum(square))",
+        "hex": "f10505"
+      },
+      {
+        "expression": "(sum(sign) - sum(sign))",
+        "hex": "f10606"
+      },
+      {
+        "expression": "(max(id) - max(id))",
+        "hex": "f10f0f"
+      },
+      {
+        "expression": "((min(id) - max(id)) + (max(id) - min(id)))",
+        "hex": "f0f10b0ff10f0b"
+      },
+      {
+        "expression": "((min(id) - max(id)) - (min(id) - max(id)))",
+        "hex": "f1f10b0ff10b0f"
+      },
+      {
+        "expression": "((max(id) - min(id)) - (max(id) - min(id)))",
+        "hex": "f1f10f0bf10f0b"
+      }
+    ],
+    "polynomial": [],
+    "representative": "(length - length)",
+    "representative_hex": "f10000"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) + (first * last)) - max(id))",
+        "hex": "f1f00ff201020f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "last"
+        ],
+        1
+      ]
+    ],
+    "representative": "(first * last)",
+    "representative_hex": "f20102"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(sign) + ((sum(id) * max(id)) - sum(sign)))",
+        "hex": "f006f1f2030f06"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(sum(id) * max(id))",
+    "representative_hex": "f2030f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(length - (max(id) - min(id)))",
+        "hex": "f100f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "length"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(length + (min(id) - max(id)))",
+    "representative_hex": "f000f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(length - (min(id) - max(id)))",
+        "hex": "f100f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "length"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(length + (max(id) - min(id)))",
+    "representative_hex": "f000f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(first - (max(id) - min(id)))",
+        "hex": "f101f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(first + (min(id) - max(id)))",
+    "representative_hex": "f001f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(first - (min(id) - max(id)))",
+        "hex": "f101f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(first + (max(id) - min(id)))",
+    "representative_hex": "f001f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(last - (max(id) - min(id)))",
+        "hex": "f102f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(last + (min(id) - max(id)))",
+    "representative_hex": "f002f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(last - (min(id) - max(id)))",
+        "hex": "f102f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(last + (max(id) - min(id)))",
+    "representative_hex": "f002f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(id) - (max(id) - min(id)))",
+        "hex": "f103f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(sum(id) + (min(id) - max(id)))",
+    "representative_hex": "f003f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(id) - (min(id) - max(id)))",
+        "hex": "f103f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(sum(id) + (max(id) - min(id)))",
+    "representative_hex": "f003f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) + sum(square)) - sum(sign))",
+        "hex": "f1f0030506"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(sign)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(sum(square) + (sum(id) - sum(sign)))",
+    "representative_hex": "f005f10306"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(square) - (max(id) - min(id)))",
+        "hex": "f105f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(sum(square) + (min(id) - max(id)))",
+    "representative_hex": "f005f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(square) - (min(id) - max(id)))",
+        "hex": "f105f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(sum(square) + (max(id) - min(id)))",
+    "representative_hex": "f005f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(sign) - (max(id) - min(id)))",
+        "hex": "f106f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(sign)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "(sum(sign) + (min(id) - max(id)))",
+    "representative_hex": "f006f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(sum(sign) - (min(id) - max(id)))",
+        "hex": "f106f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(sign)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(sum(sign) + (max(id) - min(id)))",
+    "representative_hex": "f006f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(max(id) - (max(id) - min(id)))",
+        "hex": "f10ff10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(max(id) + (min(id) - max(id)))",
+    "representative_hex": "f00ff10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(max(id) - (min(id) - max(id)))",
+        "hex": "f10ff10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        2
+      ]
+    ],
+    "representative": "(max(id) + (max(id) - min(id)))",
+    "representative_hex": "f00ff10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) + sum(square)) - (max(id) - min(id)))",
+        "hex": "f1f00305f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((sum(id) + sum(square)) + (min(id) - max(id)))",
+    "representative_hex": "f0f00305f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) + sum(square)) - (min(id) - max(id)))",
+        "hex": "f1f00305f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((sum(id) + sum(square)) + (max(id) - min(id)))",
+    "representative_hex": "f0f00305f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) - sum(sign)) - (max(id) - min(id)))",
+        "hex": "f1f10306f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((sum(id) - sum(sign)) + (min(id) - max(id)))",
+    "representative_hex": "f0f10306f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) - sum(sign)) - (min(id) - max(id)))",
+        "hex": "f1f10306f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((sum(id) - sum(sign)) + (max(id) - min(id)))",
+    "representative_hex": "f0f10306f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((min(id) - max(id)) - (max(id) - min(id)))",
+        "hex": "f1f10b0ff10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "min(id)"
+        ],
+        2
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -2
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (min(id) - max(id)))",
+    "representative_hex": "f0f10b0ff10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((first * last) - (max(id) - min(id)))",
+        "hex": "f1f20102f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (first * last))",
+    "representative_hex": "f0f10b0ff20102"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) * max(id)) - (max(id) - min(id)))",
+        "hex": "f1f2030ff10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (sum(id) * max(id)))",
+    "representative_hex": "f0f10b0ff2030f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) - min(id)) - (min(id) - max(id)))",
+        "hex": "f1f10f0bf10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "min(id)"
+        ],
+        -2
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        2
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (max(id) - min(id)))",
+    "representative_hex": "f0f10f0bf10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((first * last) - (min(id) - max(id)))",
+        "hex": "f1f20102f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (first * last))",
+    "representative_hex": "f0f10f0bf20102"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) * max(id)) - (min(id) - max(id)))",
+        "hex": "f1f2030ff10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (sum(id) * max(id)))",
+    "representative_hex": "f0f10f0bf2030f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) - min(id)) * (sum(id) * max(id)))",
+        "hex": "f2f10f0bf2030f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "min(id)",
+          "max(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "sum(id)",
+          "max(id)",
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "(max(id) * (sum(id) * (max(id) - min(id))))",
+    "representative_hex": "f20ff203f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) - min(id)) * (max(id) - min(id)))",
+        "hex": "f2f10f0bf10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "min(id)",
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)",
+          "max(id)"
+        ],
+        -2
+      ],
+      [
+        [
+          "max(id)",
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) * (min(id) - max(id)))",
+    "representative_hex": "f2f10b0ff10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) + (first * last)) - (max(id) - min(id)))",
+        "hex": "f1f00ff20102f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) + (first * last)) + (min(id) - max(id)))",
+    "representative_hex": "f0f00ff20102f10b0f"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((max(id) + (first * last)) - (min(id) - max(id)))",
+        "hex": "f1f00ff20102f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "last"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        2
+      ]
+    ],
+    "representative": "((max(id) + (first * last)) + (max(id) - min(id)))",
+    "representative_hex": "f0f00ff20102f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(((sum(id) * max(id)) - sum(sign)) - (max(id) - min(id)))",
+        "hex": "f1f1f2030f06f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + ((sum(id) * max(id)) - sum(sign)))",
+    "representative_hex": "f0f10b0ff1f2030f06"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((first * (sum(id) + sum(square))) - (max(id) - min(id)))",
+        "hex": "f1f201f00305f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "first",
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (first * (sum(id) + sum(square))))",
+    "representative_hex": "f0f10b0ff201f00305"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((last * (sum(id) - sum(sign))) - (max(id) - min(id)))",
+        "hex": "f1f202f10306f10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "last",
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "last",
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (last * (sum(id) - sum(sign))))",
+    "representative_hex": "f0f10b0ff202f10306"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) * (max(id) - min(id))) - (max(id) - min(id)))",
+        "hex": "f1f203f10f0bf10f0b"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        -1
+      ]
+    ],
+    "representative": "((min(id) - max(id)) + (sum(id) * (max(id) - min(id))))",
+    "representative_hex": "f0f10b0ff203f10f0b"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "(((sum(id) * max(id)) - sum(sign)) - (min(id) - max(id)))",
+        "hex": "f1f1f2030f06f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + ((sum(id) * max(id)) - sum(sign)))",
+    "representative_hex": "f0f10f0bf1f2030f06"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((first * (sum(id) + sum(square))) - (min(id) - max(id)))",
+        "hex": "f1f201f00305f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "first",
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "first",
+          "sum(square)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (first * (sum(id) + sum(square))))",
+    "representative_hex": "f0f10f0bf201f00305"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((last * (sum(id) - sum(sign))) - (min(id) - max(id)))",
+        "hex": "f1f202f10306f10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "last",
+          "sum(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "last",
+          "sum(sign)"
+        ],
+        -1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (last * (sum(id) - sum(sign))))",
+    "representative_hex": "f0f10f0bf202f10306"
+  },
+  {
+    "equivalents": [
+      {
+        "expression": "((sum(id) * (max(id) - min(id))) - (min(id) - max(id)))",
+        "hex": "f1f203f10f0bf10b0f"
+      }
+    ],
+    "polynomial": [
+      [
+        [
+          "sum(id)",
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "sum(id)",
+          "max(id)"
+        ],
+        1
+      ],
+      [
+        [
+          "min(id)"
+        ],
+        -1
+      ],
+      [
+        [
+          "max(id)"
+        ],
+        1
+      ]
+    ],
+    "representative": "((max(id) - min(id)) + (sum(id) * (max(id) - min(id))))",
+    "representative_hex": "f0f10f0bf203f10f0b"
+  }
+]
