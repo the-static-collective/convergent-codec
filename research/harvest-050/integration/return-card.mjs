@@ -9,13 +9,14 @@ const count=(x,max)=>Number.isSafeInteger(x)&&x>=0&&x<=max;
 const need=(ok,msg)=>{if(!ok)throw Error(msg)};
 export const digest=b=>createHash('sha256').update(b).digest('hex');
 function localBytes(path,max){
- const fd=openSync(path,constants.O_RDONLY|(constants.O_NOFOLLOW??0));
+ const fd=openSync(path,constants.O_RDONLY|(constants.O_NOFOLLOW??0)|(constants.O_NONBLOCK??0));
  try{const st=fstatSync(fd);need(st.isFile()&&st.size<=max,'HOLD_FILE_BOUND');const buf=Buffer.alloc(st.size+1);let n=0,k;while(n<buf.length&&(k=readSync(fd,buf,n,buf.length-n,null))>0)n+=k;need(n===st.size,'HOLD_FILE_CHANGED');return buf.subarray(0,n)}finally{closeSync(fd)}
 }
 export function inspect(bytes,pin){
  need(Buffer.isBuffer(bytes)&&bytes.length<=4096&&hex(pin)&&digest(bytes)===pin,'HOLD_CARD_PIN');
  const p=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));
  need(p&&typeof p==='object'&&!Array.isArray(p)&&Object.keys(p).sort().join('|')===KEYS.join('|'),'HOLD_CARD_FIELDS');
+ need(bytes.equals(Buffer.from(JSON.stringify(Object.fromEntries(KEYS.map(k=>[k,p[k]])))+'\n')),'HOLD_NONCANONICAL_CARD');
  need(p.schema==='harvest.return/v1'&&p.source_commit===SOURCE&&p.classification==='PRIVATE_OPERATOR_HANDOFF'&&p.authority==='NONE'&&p.admission==='none'&&p.readback==='matched','HOLD_CARD_CONTRACT');
  need([p.manifest_pin,p.receipt_sha256,p.plan_pin].every(hex)&&count(p.verified_files,4096)&&count(p.direct,32768)&&count(p.regenerated,32768)&&p.direct+p.regenerated<=32768,'HOLD_CARD_VALUES');
  return {schema:'harvest.held-return/v1',status:'HOLD_FOR_OPERATOR_REVIEW',card_sha256:pin,source_commit:SOURCE,manifest_pin:p.manifest_pin,receipt_sha256:p.receipt_sha256,verified_files:p.verified_files,direct:p.direct,regenerated:p.regenerated,authority:'NONE',admission:'none',executed:false};
