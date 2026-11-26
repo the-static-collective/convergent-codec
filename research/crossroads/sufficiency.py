@@ -4,6 +4,8 @@ from collections import defaultdict
 
 def collisions(bank):
     """Identical observed inputs with distinct outputs refute deterministic sufficiency."""
+    if len(bank['inputs']) != len(bank['outputs']):
+        raise ValueError('bank length mismatch')
     groups = defaultdict(lambda: defaultdict(list))
     for index, (x, y) in enumerate(zip(bank['inputs'], bank['outputs'])):
         groups[tuple(x)][y].append(index)

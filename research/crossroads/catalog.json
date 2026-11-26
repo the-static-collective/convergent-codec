@@ -1,0 +1,1688 @@
+{
+  "exact_stage2": [
+    "f00ff20102",
+    "f1f2030f06",
+    "f201f00305",
+    "f202f10306",
+    "f203f10f0b"
+  ],
+  "expressions": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "0a",
+    "0b",
+    "0c",
+    "0d",
+    "0e",
+    "0f",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "f000f2030f",
+    "f00305",
+    "f00ff20102",
+    "f010f20102",
+    "f10306",
+    "f10511",
+    "f10b0f",
+    "f10f0b",
+    "f1f2030f02",
+    "f1f2030f06",
+    "f20003",
+    "f20102",
+    "f20105",
+    "f201f00305",
+    "f202f10306",
+    "f2030f",
+    "f203f10f0b",
+    "f20404"
+  ],
+  "parents": [
+    "f00305",
+    "f10306",
+    "f10f0b",
+    "f20102",
+    "f2030f"
+  ],
+  "provenance": [
+    {
+      "arm": "inherited",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "inherited_bounded",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f2030f",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "cold_full",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "04",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "cold_bounded",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "00",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "04",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "fixed_statistical",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "random_matched",
+      "parents": [],
+      "roots": [
+        "sum(abs)",
+        "prod(id)",
+        "prod(square)",
+        "min(id)",
+        "min(sign)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "0b",
+        "endpoint_product_plus_peak": "04",
+        "energy_mass_times_first": "f20404",
+        "mass_peak_minus_sign": "15",
+        "span_times_mass": "15",
+        "unrelated_distinct": "04",
+        "unrelated_index_weighted": "04",
+        "unrelated_median_twice": "04"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "inherited_no_parents",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f2030f",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "inherited_sign_closed",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "inherited_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "fixed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "cold_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "04",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "sign_closed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 808
+    },
+    {
+      "arm": "inherited",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "inherited_bounded",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f20003",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "cold_full",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "cold_bounded",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "04",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "fixed_statistical",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "random_matched",
+      "parents": [],
+      "roots": [
+        "first",
+        "sum(square)",
+        "prod(id)",
+        "prod(square)",
+        "min(abs)",
+        "min(sign)",
+        "max(square)",
+        "xor(id)"
+      ],
+      "rows": {
+        "balance_times_last": "01",
+        "endpoint_product_plus_peak": "01",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "05",
+        "unrelated_distinct": "01",
+        "unrelated_index_weighted": "f10511",
+        "unrelated_median_twice": "01"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "inherited_no_parents",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f20003",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "inherited_sign_closed",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "inherited_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "fixed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "cold_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "sign_closed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "05",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 809
+    },
+    {
+      "arm": "inherited",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f20003",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "inherited_bounded",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "03",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f2030f",
+        "span_times_mass": "f20003",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "cold_full",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "cold_bounded",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "03",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "15",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "01",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "fixed_statistical",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "random_matched",
+      "parents": [],
+      "roots": [
+        "first",
+        "sum(square)",
+        "sum(sign)",
+        "prod(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(sign)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "01",
+        "endpoint_product_plus_peak": "01",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "01",
+        "span_times_mass": "01",
+        "unrelated_distinct": "01",
+        "unrelated_index_weighted": "01",
+        "unrelated_median_twice": "01"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "inherited_no_parents",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "03",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f2030f",
+        "span_times_mass": "f20003",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "inherited_sign_closed",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "inherited_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f1f2030f02",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "fixed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f1f2030f02",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "cold_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "03",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "11",
+        "span_times_mass": "01",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "sign_closed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f1f2030f02",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "00",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 810
+    },
+    {
+      "arm": "inherited",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "inherited_bounded",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f20003",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "cold_full",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "11",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "cold_bounded",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "00",
+        "mass_peak_minus_sign": "03",
+        "span_times_mass": "04",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "11",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "fixed_statistical",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "random_matched",
+      "parents": [
+        "(first * last)"
+      ],
+      "roots": [
+        "first",
+        "last",
+        "sum(square)",
+        "prod(id)",
+        "min(square)",
+        "max(abs)",
+        "max(square)",
+        "xor(abs)"
+      ],
+      "rows": {
+        "balance_times_last": "01",
+        "endpoint_product_plus_peak": "f010f20102",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "10",
+        "span_times_mass": "11",
+        "unrelated_distinct": "01",
+        "unrelated_index_weighted": "11",
+        "unrelated_median_twice": "01"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "inherited_no_parents",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f20105",
+        "mass_peak_minus_sign": "f20003",
+        "span_times_mass": "f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "inherited_sign_closed",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f203f10f0b",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "inherited_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "fixed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "min(id)",
+        "max(id)",
+        "sum(sign)",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "cold_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(abs)",
+        "sum(square)",
+        "sum(sign)",
+        "prod(id)",
+        "prod(abs)",
+        "prod(square)",
+        "prod(sign)",
+        "min(id)",
+        "min(abs)",
+        "min(square)",
+        "min(sign)",
+        "max(id)",
+        "max(abs)",
+        "max(square)",
+        "max(sign)",
+        "xor(id)",
+        "xor(abs)",
+        "xor(square)",
+        "xor(sign)"
+      ],
+      "rows": {
+        "balance_times_last": "00",
+        "endpoint_product_plus_peak": "00",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "03",
+        "span_times_mass": "04",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "11",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    },
+    {
+      "arm": "sign_closed_prioritized",
+      "parents": [
+        "(sum(id) + sum(square))",
+        "(sum(id) - sum(sign))",
+        "(max(id) - min(id))",
+        "(first * last)",
+        "(sum(id) * max(id))"
+      ],
+      "roots": [
+        "length",
+        "first",
+        "last",
+        "sum(id)",
+        "sum(square)",
+        "sum(sign)",
+        "max(id)",
+        "(min(id) - max(id))",
+        "(max(id) - min(id))"
+      ],
+      "rows": {
+        "balance_times_last": "f202f10306",
+        "endpoint_product_plus_peak": "f00ff20102",
+        "energy_mass_times_first": "f201f00305",
+        "mass_peak_minus_sign": "f1f2030f06",
+        "span_times_mass": "f000f2030f",
+        "unrelated_distinct": "00",
+        "unrelated_index_weighted": "03",
+        "unrelated_median_twice": "00"
+      },
+      "seed": 811
+    }
+  ],
+  "roots": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "0f",
+    "f10b0f",
+    "f10f0b"
+  ],
+  "source": "CROSSROADS 008 results.json",
+  "source_sha256": "17acac2ec38434402c18d5cd0ceb32a8518493e09f23716db6d33550aea6aa3e"
+}
