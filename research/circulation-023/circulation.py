@@ -24,7 +24,7 @@ def valid_hash(h): return isinstance(h,str) and bool(re.fullmatch('[0-9a-f]{64}'
 def valid_path(p):
     if not isinstance(p,str) or not 0<len(p)<=1024: return False
     for s in p.split('/'):
-        if not s or s in ('.','..') or len(s.encode('utf-8'))>255 or s[-1] in ' .' or any(ord(c)<32 or c in '\\:<>\"|?*' for c in s): return False
+        if not s or s in ('.','..') or len(s.encode('utf-8'))>255 or s[-1] in ' .' or any(ord(c)<32 or c in '\\:<>"|?*' for c in s): return False
         if re.fullmatch(r'(?i:CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³])',s.split('.')[0]): return False
     return True
 
