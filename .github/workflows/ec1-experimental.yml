@@ -1,0 +1,38 @@
+name: EC1 experimental checks
+on:
+  pull_request:
+    paths:
+      - 'research/embodiment-022/**'
+      - '.github/workflows/ec1-experimental.yml'
+  push:
+    branches: ['research/organism-021']
+    paths:
+      - 'research/embodiment-022/**'
+      - '.github/workflows/ec1-experimental.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.10', '3.11', '3.12', '3.13']
+    defaults:
+      run:
+        working-directory: research/embodiment-022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python -O -m unittest discover -s tests -v
+      - run: python benchmark.py
+      - run: |
+          python -m pip install .
+          convergent-ec1 compress benchmark.py test.ec1 --witness witness.json
+          convergent-ec1 inspect test.ec1
+          convergent-ec1 decompress test.ec1 recovered.py
+          cmp benchmark.py recovered.py
+          convergent-ec1 benchmark benchmark.py
