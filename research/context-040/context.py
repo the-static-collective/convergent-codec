@@ -31,7 +31,6 @@ class Context:
         def key(x):
             counts=Counter(apply(x,*m) for m in ms);n=len(ms)
             entropy=-sum(k/n*log2(k/n) for k in counts.values()) if n else 0
-            # Search the unrestricted space as well as separating known models.
             return (entropy+self.space.query_score(x), x)
         return max(pool,key=key)
     def observe(self,x,y):
