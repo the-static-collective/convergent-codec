@@ -1,0 +1,86 @@
+{
+  "generation": 24,
+  "status": "local filesystem prototype; modeled wire, no network",
+  "source_bytes": 1133100,
+  "objects": 107,
+  "peer_counts": [
+    39,
+    41,
+    45,
+    44,
+    47,
+    34
+  ],
+  "discovery": {
+    "blind": {
+      "requests": 238,
+      "inventory": 0,
+      "wire": 713963
+    },
+    "exact": {
+      "requests": 107,
+      "inventory": 8024,
+      "wire": 717664
+    },
+    "bitmap_shared": {
+      "requests": 107,
+      "inventory": 300,
+      "wire": 709940
+    },
+    "bitmap_cold": {
+      "requests": 107,
+      "inventory": 29094,
+      "wire": 738734
+    },
+    "stale": {
+      "requests": 109,
+      "failed": 2,
+      "wire": 710013
+    }
+  },
+  "replication": {
+    "seeds": 8,
+    "objects_per_seed": 60,
+    "peers": 6,
+    "budget_encoded_payload_bytes": 12312,
+    "copies": 24,
+    "complete_outage_cases": {
+      "one": {
+        "total": 48,
+        "initial": 3,
+        "random": 4,
+        "scarcity": 48
+      },
+      "two": {
+        "total": 120,
+        "initial": 0,
+        "random": 0,
+        "scarcity": 2
+      },
+      "three": {
+        "total": 160,
+        "initial": 0,
+        "random": 0,
+        "scarcity": 0
+      }
+    },
+    "mean_missing_two": {
+      "initial": 9.6,
+      "random": 5.975,
+      "scarcity": 3.2
+    }
+  },
+  "tests": {
+    "normal": 8,
+    "optimized": 8,
+    "benchmark_actual_restores": 5
+  },
+  "bundle_sha256": "882d775c3b596ec3f5e9532d71ff7a0641ad694af1ffe7ea4f3ac2c02ca0d784",
+  "limits": [
+    "manifest pin supplied from trusted source",
+    "outage enumeration on actual inventory sets, not full restores",
+    "uniform random object sizes and simple random comparator",
+    "no network, authentication, encryption, fault domains or production protocol comparison",
+    "no remote CI verified"
+  ]
+}

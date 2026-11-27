@@ -1,0 +1,15 @@
+# CURIOSITY 033 — CU1
+Read-only stationary-incident investigation. Python 3.10+, standard library. Set PYTHONPATH=../perception-032:../interdependence-026 (POSIX). Supply complete clean SN1 baseline, operator-defined JSON hash-to-group map, chronological incident reports. Run python curiosity.py baseline.json groups.json incident1.json --sample 4 --policy curiosity > plan.json. Use prior PERCEPTION sensation.py --selection plan.json to obtain next report. Requires trusted independently pinned manifest and stable peer labels. Max 128 objects, 8 peers, 16 groups. No repair, deletion, networking or deployment.
+
+Finite deterministic models: unchanged, whole-peer and peer-group missing/corrupt, and all-peer group missing/corrupt. Model identity is observational not causal. Greedy entropy partition under uniform heuristic weights, not calibrated probability. Unknown and named observations supply no decisive evidence; contradictory repeat observations require restart. Zero compatible models means outside vocabulary. One is not causal proof. All policies continue fixed-order examination after zero/one model remains. Protected mode reserves half selection for fixed-order examination. PN1 rotation remains ordinary default; CU1 is a specialized diagnostic instrument.
+
+120 main and independent follow-up filesystem incidents, seeds 3301–3312 and 3341–3352, five regimes, four peers, 36 objects, four groups, 47 or 49 distinguishable models. Four follow-up rounds of four object identities after shared two-identity anchor. 38400 actual sampled pair observations matched full scans. Main and fresh aggregate (known correct/24, mean step; clean correct/24, mean step; compound reject/24; novel reject/24; offline correct/24):
+- Rotation: 24,1.67; 10,3.70; 21;23;15
+- Random: 23,1.48; 10,3.60; 22;23;14
+- Fault: 24,1.79; 24,3.04; 21;24;15
+- Curiosity: 24,1.21; 24,2.00; 21;23;15
+- Protected: 24,1.42; 24,2.42; 21;22;15
+
+Fresh known mean 1.92 rotation vs 1.17 curiosity, fresh clean 3/12 vs 12/12; fresh unknown rejection both 21/24. No consistent open-set advantage. Temporary false singleton checkpoints on compound/novel incidents: rotation 54, curiosity 51, fault 53, random 56, protected 59. Equal probe counts, unequal read costs: respectively 1844954,1832062,1762366,1826316,1848541 B, excluding shared and truth scans. Delay conditional on identification. Overlapping seed pilot retained separately and excluded. No causal inference or dynamic model. Nine unit methods passed normal and optimized Python, including CLI handoff and read-only checks.
+
+Source blob 63e3bd4829b2572d90a4ef4dcf790146dfd86485 matches tested local source. Inherited explicit-selection observer remains unchanged. Full tests, benchmarks, independent results and excluded pilot in CURIOSITY-033.zip SHA256 2753cf33d1baeb3a8bbb2ae268150f31ba5ea915bf51e140f9ca44bcdc7ef53d. Tests/benchmark not upstream this pass. No remote CI verification, independent security audit, actual user devices or production activation. Draft PR only.

@@ -1,0 +1,54 @@
+{
+  "generation": 21,
+  "status": "local research verified; upstream runtime not integrated",
+  "streams": 13,
+  "training_documents": 104,
+  "heldout_documents": 208,
+  "verified_config_streams": 130,
+  "seed_protocol": {
+    "synthetic": [
+      2120,
+      2121
+    ],
+    "real": 21021
+  },
+  "bytes": {
+    "independent": 57819,
+    "rolling": 56300,
+    "normalized": 44174,
+    "historical_raw": 56096,
+    "whole_attention": 37197,
+    "single_source": 42379,
+    "no_patch": 36679,
+    "no_rolling": 37602,
+    "core": 34879,
+    "grammar": 34832
+  },
+  "history_compressed_bytes": 46756,
+  "offline_matched_best_with_digest_allowances": 21017,
+  "train_only_router": {
+    "shared": 34878,
+    "paid": 44174
+  },
+  "timings_seconds": {
+    "core": 1.059,
+    "grammar_including_training": 3.974,
+    "router_training_and_followup": 13.203
+  },
+  "bundle": {
+    "filename": "ORGANISM-021.zip",
+    "bytes": 1841023,
+    "sha256": "68802858f36ecf2d1e7ddec9ea8a0dd4db01feacc8579f32060434ee06278534",
+    "prior_generations_present": 20,
+    "location": "separate conversation artifact; not committed"
+  },
+  "limitations": [
+    "trusted input only",
+    "final selected stream independently verified, not every candidate",
+    "offline controls count digest allowances without serializing them",
+    "historical storage separately accounted",
+    "no upstream execution or source port",
+    "two synthetic seeds per condition; one real stream",
+    "runtime memory not matched"
+  ]
+}

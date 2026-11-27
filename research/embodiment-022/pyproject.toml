@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "convergent-embodiment"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Experimental bounded EC1 byte stream codec"
+[project.scripts]
+convergent-ec1 = "convergent_embodiment.__main__:main"
+[tool.setuptools.packages.find]
+include = ["convergent_embodiment*"]

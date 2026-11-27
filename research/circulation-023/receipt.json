@@ -1,0 +1,110 @@
+{
+  "generation": 23,
+  "format": "CC1",
+  "status": "locally tested, source hashes verified upstream; experimental only",
+  "stages": [
+    "initial",
+    "unchanged",
+    "rename_delete",
+    "prefix_insert",
+    "small_edits",
+    "new_file"
+  ],
+  "source_bytes": [
+    772133,
+    772133,
+    706794,
+    706829,
+    706843,
+    726798
+  ],
+  "tar_lzma": [
+    358724,
+    358724,
+    358492,
+    358544,
+    358556,
+    358572
+  ],
+  "fixed": {
+    "bundle": [
+      400722,
+      4337,
+      4317,
+      285572,
+      39898,
+      5971
+    ],
+    "inventory": [
+      4,
+      2916,
+      2916,
+      2916,
+      4228,
+      4676
+    ],
+    "new_objects": [
+      91,
+      0,
+      0,
+      41,
+      14,
+      1
+    ],
+    "final_store_payload": 709347,
+    "encode_seconds": 0.129053589,
+    "receive_seconds": 0.157174488
+  },
+  "cdc": {
+    "bundle": [
+      392585,
+      3410,
+      3401,
+      9300,
+      32982,
+      5009
+    ],
+    "inventory": [
+      4,
+      2180,
+      2180,
+      2180,
+      2244,
+      2468
+    ],
+    "new_objects": [
+      68,
+      0,
+      0,
+      2,
+      7,
+      1
+    ],
+    "final_store_payload": 423357,
+    "encode_seconds": 0.873100204,
+    "receive_seconds": 0.12210678
+  },
+  "cdc_ec1": {
+    "same_wire_cost_as_cdc": true,
+    "encode_seconds": 1.122579184,
+    "receive_seconds": 0.11456235
+  },
+  "verified_restores": 18,
+  "tests_normal": 12,
+  "tests_optimized": 12,
+  "archive_sha256": "3f45a17218a321686477e6231984c11d9af05160ba3a2e45f22f4c6caaa2dee4",
+  "source_blob_hashes": {
+    "circulation.py": "faea33c8e618dcadbb87ab74b38e9d9bf04cc6a3",
+    "ec1.py": "060a772795ca6e3af9bf40ed5d5c0ee71b71a53d",
+    "test_circulation.py": "197ee4a0b6d906e058bf156016d8130fae1273f5",
+    "benchmark.py": "35c5e871030bbf4a453ffc30645eb5cfa66fe213"
+  },
+  "limits": [
+    "one local sequence, source files and controlled edits; not actual Git history",
+    "local stores only; no WAN, authentication or concurrency safety",
+    "metadata and Git ancestry not preserved",
+    "tar control not wire-format matched; no rsync or Git pack baseline",
+    "cumulative store, no garbage collection",
+    "EC1 offered no additional compression benefit"
+  ]
+}
